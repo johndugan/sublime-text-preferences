@@ -1,0 +1,125 @@
+[
+
+    // -------- Editor --------
+
+    // Visibility
+    { "keys": ["ctrl+b"], "command": "toggle_side_bar" },
+    { "keys": ["f11"], "command": "toggle_full_screen" },
+    { "keys": ["shift+f11"], "command": "toggle_distraction_free" },
+
+    // Multiple Panes
+    { "keys": ["alt+shift+1"], "command": "set_layout", "args": {"cols": [0.0, 1.0], "rows": [0.0, 1.0], "cells": [[0, 0, 1, 1]]} },
+    { "keys": ["alt+shift+2"], "command": "set_layout", "args": {"cols": [0.0, 0.5, 1.0], "rows": [0.0, 1.0], "cells": [[0, 0, 1, 1], [1, 0, 2, 1]]} },
+    { "keys": ["alt+shift+3"], "command": "set_layout", "args": {"cols": [0.0, 0.33, 0.66, 1.0], "rows": [0.0, 1.0], "cells": [[0, 0, 1, 1], [1, 0, 2, 1], [2, 0, 3, 1]]} },
+    {"keys": ["alt+shift+4"], "command": "set_layout", "args": {"cols": [0.0, 0.25, 0.5, 0.75, 1.0], "rows": [0.0, 1.0], "cells": [[0, 0, 1, 1], [1, 0, 2, 1], [2, 0, 3, 1], [3, 0, 4, 1]]} },
+    { "keys": ["ctrl+1"], "command": "focus_group", "args": { "group": 0 } },
+    { "keys": ["ctrl+2"], "command": "focus_group", "args": { "group": 1 } },
+    { "keys": ["ctrl+3"], "command": "focus_group", "args": { "group": 2 } },
+    { "keys": ["ctrl+4"], "command": "focus_group", "args": { "group": 3 } },
+
+
+    // -------- Traversal --------
+
+    // Left/Right
+    { "keys": ["ctrl+left"], "command": "move", "args": {"by": "words", "forward": false} },
+    { "keys": ["ctrl+right"], "command": "move", "args": {"by": "word_ends", "forward": true} },
+    { "keys": ["ctrl+alt+left"], "command": "move_to", "args": {"to": "bol", "extend": false} },
+    { "keys": ["ctrl+alt+right"], "command": "move_to", "args": {"to": "eol", "extend": false} },
+    { "keys": ["ctrl+space"], "command": "move", "args": {"by": "subword_ends", "forward": true} },
+    { "keys": ["alt+space"], "command": "move", "args": {"by": "subwords", "forward": false} },
+
+    // Up/Down
+    { "keys": ["alt+]"], "command": "move_to", "args": {"to": "brackets"} },
+    { "keys": ["alt+>"], "args": {"action": "matching_pair"}, "command": "run_emmet_action", "context": [{"key": "emmet_action_enabled.matching_pair"}] }, // ! requires Emmet !
+    { "keys": ["ctrl+home"], "command": "move_to", "args": {"to": "bof", "extend": false} },
+    { "keys": ["ctrl+end"], "command": "move_to", "args": {"to": "eof", "extend": false} },
+
+
+    // -------- Selection --------
+
+    // Left/Right
+    { "keys": ["ctrl+shift+left"], "command": "move", "args": {"by": "words", "forward": false, "extend": true} },
+    { "keys": ["ctrl+shift+right"], "command": "move", "args": {"by": "word_ends", "forward": true, "extend": true} },
+    { "keys": ["ctrl+alt+shift+left"], "command": "move_to", "args": {"to": "bol", "extend": true} },
+    { "keys": ["ctrl+alt+shift+right"], "command": "move_to", "args": {"to": "eol", "extend": true} },
+
+    // Up/Down
+    { "keys": ["ctrl+shift+down"], "command": "expand_selection", "args": {"to": "line"} },
+    { "keys": ["ctrl+shift+up"], "command": "expand_selection", "args": {"to": "line"} }, // PROBLEM: not possible to select lines above
+    { "keys": ["ctrl+alt+shift+up"], "command": "move_to", "args": {"to": "bof", "extend": true} },
+    { "keys": ["ctrl+alt+shift+down"], "command": "move_to", "args": {"to": "eof", "extend": true} },
+
+
+    // -------- Deletion --------
+
+    { "keys": ["ctrl+backspace"], "command": "delete_word", "args": { "forward": false } },
+    { "keys": ["alt+backspace"], "command": "delete_word", "args": { "forward": true } },
+    { "keys": ["ctrl+alt+backspace"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete to Hard BOL.sublime-macro"} },
+    { "keys": ["ctrl+shift+backspace"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete Line.sublime-macro"} },
+    { "keys": ["ctrl+shift+alt+d"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete Line.sublime-macro"} },
+    { "keys": ["alt+shift+backspace"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete to Hard EOL.sublime-macro"} },
+    { "keys": ["ctrl+alt+enter"], "command": "expand_as_you_type", "context": [{"operand": false, "operator": "equal", "match_all": true, "key": "setting.is_widget"}, {"match_all": true, "key": "emmet_action_enabled.expand_as_you_type"}] }, // ! requires Emmet !
+
+
+    // -------- Search --------
+
+    { "keys": ["ctrl+f"], "command": "show_panel", "args": {"panel": "find", "reverse": false} },
+    { "keys": ["ctrl+shift+f"], "command": "show_panel", "args": {"panel": "replace", "reverse": false} },
+    { "keys": ["ctrl+shift+alt+f"], "command": "show_panel", "args": {"panel": "find_in_files"} },
+
+
+    // -------- Find & Replace --------
+
+    { "keys": ["ctrl+d"], "command": "find_under_expand" },
+    { "keys": ["ctrl+alt+a"], "command": "find_all_under" },
+    { "keys": ["ctrl+alt+z"], "command": "soft_undo" },
+    { "keys": ["ctrl+alt+up"], "command": "find_prev" },
+    { "keys": ["ctrl+alt+down"], "command": "find_under" },
+    { "keys": ["alt+shift+up"], "command": "expand_region" }, // ! requires ExpandRegion !
+    { "keys": ["alt+shift+down"], "command": "expand_region", "args": {"undo": true}, "context": [{ "key": "expand_region_soft_undo" }]}, // ! requires ExpandRegion !
+
+
+    // -------- Code --------
+
+    // Lines
+    { "keys": ["alt+up"], "command": "swap_line_up" },
+    { "keys": ["alt+down"], "command": "swap_line_down" },
+    { "keys": ["ctrl+shift+d"], "command": "duplicate_line" },
+    { "keys": ["ctrl+j"], "command": "join_lines" },
+    { "keys": ["ctrl+shift+v"], "command": "paste_and_indent" },
+    { "keys": ["ctrl+enter"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Add Line.sublime-macro"} },
+    { "keys": ["alt+enter"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Add Line Before.sublime-macro"} },
+
+    // Integers ! requires Emmet !
+    { "keys": ["alt+="], "args": {"action": "increment_number_by_1"}, "command": "run_emmet_action", "context": [{"key": "emmet_action_enabled.increment_number_by_1"}] },
+    { "keys": ["alt+-"], "args": {"action": "decrement_number_by_1"}, "command": "run_emmet_action", "context": [{"key": "emmet_action_enabled.decrement_number_by_1"}] },
+    { "keys": ["alt+shift+="], "args": {"action": "increment_number_by_10"}, "command": "run_emmet_action", "context": [{"key": "emmet_action_enabled.increment_number_by_10"}] },
+    { "keys": ["alt+shift+-"], "args": {"action": "decrement_number_by_10"}, "command": "run_emmet_action", "context": [{"key": "emmet_action_enabled.decrement_number_by_10"}] },
+
+    // Comments
+    { "keys": ["ctrl+/"], "command": "toggle_comment", "args": { "block": false } },
+    { "keys": ["ctrl+alt+/"], "command": "toggle_comment", "args": { "block": true } },
+
+    // Hints
+    { "keys": ["alt+d"], "command": "goto_definition" },
+    { "keys": ["ctrl+shift+space"], "command": "code_intel_auto_complete" }, // ! requires SublimeCodeIntel !
+
+    // Multiple Cursors
+    { "keys": ["ctrl+up"], "command": "select_lines", "args": {"forward": false} },
+    { "keys": ["ctrl+down"], "command": "select_lines", "args": {"forward": true} },
+
+    // JSX Completion ! requires Emmet !
+    {"keys": ["ctrl+."], "args": {"action": "expand_abbreviation"}, "command": "run_emmet_action", "context": [{"key": "emmet_action_enabled.expand_abbreviation"}] },
+    {
+        "keys": ["tab"],
+        "command": "expand_abbreviation_by_tab",
+        "context": [
+            { "operand": "meta.group.braces.round.js", "operator": "equal", "match_all": true, "key": "selector" },
+            { "match_all": true, "key": "selection_empty" },
+            { "operator": "equal", "operand": false, "match_all": true, "key": "has_next_field" },
+            { "operand": false, "operator": "equal", "match_all": true, "key": "auto_complete_visible" },
+            { "match_all": true, "key": "is_abbreviation" }
+        ]
+    }
+
+]
