@@ -1,0 +1,36 @@
+{
+	"alert_when_line_ending_is":
+	[
+		"Windows",
+		"CR"
+	],
+	"auto_convert_line_endings_to": "Unix",
+	"color_scheme": "Packages/User/Contrast.tmTheme",
+	"convert_tabspaces_on_save": true,
+	"default_line_ending": "unix",
+	"ensure_newline_at_eof_on_save": true,
+	"folder_exclude_patterns":
+	[
+		".git",
+		".sass-cache",
+		".tmp"
+	],
+	"font_size": 11,
+	"ignored_packages":
+	[
+		"Color Scheme - Default",
+		"Vintage"
+	],
+	"indent_guide_options": [
+		"draw_normal",
+		"draw_active"
+	],
+	"rulers":
+	[
+	],
+	"tab_size": 4,
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true,
+	"use_tab_stops": true,
+	"word_wrap": true
+}
