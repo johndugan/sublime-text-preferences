@@ -1,10 +1,4 @@
 {
-	"alert_when_line_ending_is":
-	[
-		"Windows",
-		"CR"
-	],
-	"auto_convert_line_endings_to": "Unix",
 	"color_scheme": "Packages/User/Contrast.tmTheme",
 	"convert_tabspaces_on_save": true,
 	"default_line_ending": "unix",
@@ -18,10 +12,12 @@
 	"font_size": 11,
 	"ignored_packages":
 	[
+		"Color Highlighter",
 		"Color Scheme - Default",
 		"Vintage"
 	],
-	"indent_guide_options": [
+	"indent_guide_options":
+	[
 		"draw_normal",
 		"draw_active"
 	],
