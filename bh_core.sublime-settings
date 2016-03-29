@@ -1,0 +1,69 @@
+{
+    "user_scope_brackets": [
+        {
+            "name": "single_quote",
+            "enabled": false
+        },
+        {
+            "name": "double_quote",
+            "enabled": false
+        }
+    ],
+    "bracket_styles": {
+        "default": {
+            "icon": "dot",
+            "color": "brackethighlighter.default",
+            "style": "stippled"
+        },
+        "unmatched": {
+            "icon": "question",
+            "color": "brackethighlighter.unmatched",
+            "style": "outline"
+        },
+        "curly": {
+            "icon": "curly_bracket"
+            // "color": "brackethighlighter.curly",
+            // "style": "underline"
+        },
+        "round": {
+            "icon": "round_bracket"
+            // "color": "brackethighlighter.round",
+            // "style": "underline"
+        },
+        "square": {
+            "icon": "square_bracket"
+            // "color": "brackethighlighter.square",
+            // "style": "underline"
+        },
+        "angle": {
+            "icon": "angle_bracket"
+            // "color": "brackethighlighter.angle",
+            // "style": "underline"
+        },
+        "tag": {
+            "icon": "angle_bracket" // "tag"
+            // "color": "brackethighlighter.tag",
+            // "style": "underline"
+        },
+        "c_define": {
+            "icon": "hash"
+            // "color": "brackethighlighter.c_define",
+            // "style": "underline"
+        },
+        "single_quote": {
+            "icon": "single_quote"
+            // "color": "brackethighlighter.quote",
+            // "style": "underline"
+        },
+        "double_quote": {
+            "icon": "double_quote"
+            // "color": "brackethighlighter.quote",
+            // "style": "underline"
+        },
+        "regex": {
+            "icon": "regex"
+            // "color": "brackethighlighter.quote",
+            // "style": "underline"
+        }
+    }
+}
