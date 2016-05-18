@@ -10,7 +10,11 @@
             "eslint": {
                 "@disable": false,
                 "args": [],
-                "excludes": []
+                "excludes": [
+                    "*/bower_components/*",
+                    "*/build/*",
+                    "*/dist/*"
+                ]
             },
             "htmlhint": {
                 "@disable": false,
