@@ -13,7 +13,8 @@
                 "excludes": [
                     "*/bower_components/*",
                     "*/build/*",
-                    "*/dist/*"
+                    "*/dist/*",
+                    "*/vendor/*"
                 ]
             },
             "htmlhint": {
