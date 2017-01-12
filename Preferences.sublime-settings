@@ -10,8 +10,11 @@
 		".sass-cache",
 		".tmp"
 	],
+	"font_face": "Source Code Pro",
 	"font_size": 11,
 	"highlight_line": true,
+	"line_padding_bottom": 1,
+	"line_padding_top": 1,
 	"ignored_packages":
 	[
 		"Color Highlighter",
