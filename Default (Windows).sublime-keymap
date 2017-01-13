@@ -6,6 +6,7 @@
     { "keys": ["ctrl+b"], "command": "toggle_side_bar" },
     { "keys": ["f11"], "command": "toggle_full_screen" },
     { "keys": ["shift+f11"], "command": "toggle_distraction_free" },
+    { "keys": ["ctrl+shift+r"], "command": "refresh_folder_list" },
 
     // Multiple Panes
     { "keys": ["alt+shift+1"], "command": "set_layout", "args": {"cols": [0.0, 1.0], "rows": [0.0, 1.0], "cells": [[0, 0, 1, 1]]} },
@@ -17,8 +18,6 @@
     { "keys": ["ctrl+3"], "command": "focus_group", "args": { "group": 2 } },
     { "keys": ["ctrl+4"], "command": "focus_group", "args": { "group": 3 } },
 
-    // Theme Development
-    { "keys": ["ctrl+shift+r"], "command": "refresh_folder_list" },
 
 
     // -------- Traversal --------
