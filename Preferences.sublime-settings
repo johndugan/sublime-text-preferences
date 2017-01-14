@@ -1,4 +1,9 @@
 {
+	"binary_file_patterns":
+	[
+		"bower_components/*",
+		"node_modules/*"
+	],
 	"caret_style": "phase",
 	"color_scheme": "Packages/User/Contrast.tmTheme",
 	"convert_tabspaces_on_save": true,
@@ -26,16 +31,16 @@
 	],
 	"line_padding_bottom": 1,
 	"line_padding_top": 1,
-    "match_brackets": false,
-    "match_brackets_angle": false,
-    "match_brackets_braces": false,
-    "match_brackets_content": false,
-    "match_brackets_square": false,
-    "match_tags": false,
-    "rulers":
+	"margin": 12,
+	"match_brackets": false,
+	"match_brackets_angle": false,
+	"match_brackets_braces": false,
+	"match_brackets_content": false,
+	"match_brackets_square": false,
+	"match_tags": false,
+	"rulers":
 	[
 	],
-	"margin": 12,
 	"tab_size": 4,
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
