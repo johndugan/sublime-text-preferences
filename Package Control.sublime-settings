@@ -1,0 +1,25 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"Babel",
+		"BracketHighlighter",
+		"ColorSchemeEditor",
+		"DocBlockr",
+		"Emmet",
+		"ExpandRegion",
+		"Handlebars",
+		"LineEndings",
+		"Package Control",
+		"Sass",
+		"SublimeCodeIntel",
+		"SublimeLinter",
+		"SublimeLinter-contrib-eslint",
+		"SublimeLinter-php",
+		"SublimeLinter-xmllint",
+		"TrailingSpaces"
+	]
+}
