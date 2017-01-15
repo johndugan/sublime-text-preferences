@@ -1,5 +1,5 @@
 {
-    "search_threshold": 50000,
+    // The `user_scope_brackets` rules below _extend_ the defaults.
     "user_scope_brackets": [
         {
             "name": "single_quote",
@@ -12,16 +12,9 @@
         {
             "name": "jsregex",
             "enabed": false
-        },
-        {
-            "name": "perlregex",
-            "enabed": false
-        },
-        {
-            "name": "rubyregex",
-            "enabed": false
         }
     ],
+    // when one "bracket style" is adjusted, all must be included.
     "bracket_styles": {
         "default": {
             "icon": "dot",
@@ -35,21 +28,48 @@
         },
         "curly": {
             "icon": "curly_bracket"
+            // "color": "brackethighlighter.curly",
+            // "style": "underline"
         },
         "round": {
             "icon": "round_bracket"
+            // "color": "brackethighlighter.round",
+            // "style": "underline"
         },
         "square": {
             "icon": "square_bracket"
+            // "color": "brackethighlighter.square",
+            // "style": "underline"
         },
         "angle": {
             "icon": "angle_bracket"
+            // "color": "brackethighlighter.angle",
+            // "style": "underline"
         },
         "tag": {
             "icon": "angle_bracket" // default is "tag"
+            // "color": "brackethighlighter.tag",
+            // "style": "underline"
         },
         "c_define": {
             "icon": "hash"
+            // "color": "brackethighlighter.c_define",
+            // "style": "underline"
+        },
+        "single_quote": {
+            "icon": "single_quote"
+            // "color": "brackethighlighter.quote",
+            // "style": "underline"
+        },
+        "double_quote": {
+            "icon": "double_quote"
+            // "color": "brackethighlighter.quote",
+            // "style": "underline"
+        },
+        "regex": {
+            "icon": "regex"
+            // "color": "brackethighlighter.quote",
+            // "style": "underline"
         }
     }
 }
