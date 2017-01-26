@@ -11,9 +11,12 @@
                 "@disable": false,
                 "args": [],
                 "excludes": [
+                    "*/_build/*",
+                    "*/_dist/*",
                     "*/bower_components/*",
                     "*/build/*",
                     "*/dist/*",
+                    "*/node_modules/*",
                     "*/vendor/*"
                 ]
             },
@@ -23,6 +26,11 @@
                 "excludes": []
             },
             "php": {
+                "@disable": false,
+                "args": [],
+                "excludes": []
+            },
+            "xmllint": {
                 "@disable": false,
                 "args": [],
                 "excludes": []
