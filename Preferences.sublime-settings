@@ -1,7 +1,25 @@
 {
 	"binary_file_patterns":
 	[
+		"*.dds",
+		"*.eot",
+		"*.gif",
+		"*.ico",
+		"*.jar",
+		"*.jpeg",
+		"*.jpg",
+		"*.map",
+		"*.pdf",
+		"*.png",
+		"*.swf",
+		"*.tga",
+		"*.ttf",
+		"*.zip",
+		"_build/*",
+		"_dist/*",
 		"bower_components/*",
+		"build/*",
+		"dist/*",
 		"node_modules/*"
 	],
 	"caret_style": "phase",
